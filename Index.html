@@ -1,62 +1,217 @@
-<p>&nbsp;</p><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDjlpVGCmcJAhx0ik5z_Qw45GXj3C5ZRC2VBXljKoQuKuQBuWXucsSAt_ayFYApOv5b41LH7L1dNxpMmOyMpG6uYfj4Md6786-Stx3xWy94Fty0TuOUgBzF87xbLDd1Iw3oRCAbap0VhsYtnJ1M9P21wiYikklMvN4Zb-3N3KbUBJt9v5UWVECjRb2-hhv/s540/images%20(2).jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="540" data-original-width="520" height="308" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDjlpVGCmcJAhx0ik5z_Qw45GXj3C5ZRC2VBXljKoQuKuQBuWXucsSAt_ayFYApOv5b41LH7L1dNxpMmOyMpG6uYfj4Md6786-Stx3xWy94Fty0TuOUgBzF87xbLDd1Iw3oRCAbap0VhsYtnJ1M9P21wiYikklMvN4Zb-3N3KbUBJt9v5UWVECjRb2-hhv/w308-h308/images%20(2).jpeg" width="308" /></a></div><br /><p></p>
+<!-- wp:paragraph -->
+<p>___________________________________________</p>
+<!-- /wp:paragraph -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JW Player with ClearKey DRM</title>
-    <!-- Include the JW Player library -->
-    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
-</head>
-<body>
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong><em>Cartoon Movie</em></strong></li>
+<!-- /wp:list-item -->
 
-<div id="player"></div>
+<!-- wp:list-item -->
+<li><strong><em>Anime</em></strong></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
 
-<script>
-// The provided URL with the DRM parameters
-var input_url ="https://livess.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/jamuna-test-sample-ok.stream/playlist.m3u8|drmScheme=clearkey&drmLicense=9ecad6c4413f8bdc54712ce6c072a2cf:442df559c369bdada8ba3abe97811575";
+<!-- wp:paragraph -->
+<p><strong><em>(Watch the movie click the photo)</em></strong></p>
+<!-- /wp:paragraph -->
 
-// Extract the base URL and DRM license keys
-var parts = input_url.split('|');
-var url = parts[0]; // The DASH MPD URL
-var query_string = parts[1];
+<!-- wp:cover {"minHeight":480,"minHeightUnit":"px","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>THE LION KING</em></strong> <strong><em>1994</em></strong></p>
+<!-- /wp:paragraph -->
 
-var params = new URLSearchParams(query_string);
-var drmScheme = params.get('drmScheme');
-var drmLicense = params.get('drmLicense');
+<!-- wp:image {"lightbox":{"enabled":false},"id":344,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!AiQ-Ljb79RYqfLPRxbXAj1gIK7Y"><img src="https://tvworlddotblog.files.wordpress.com/2024/04/1000016900.jpg?w=452" alt="" class="wp-image-344" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
 
-var k1, k2;
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
 
-if (drmScheme === 'clearkey' && drmLicense) {
-    [k1, k2] = drmLicense.split(':');
-}
+<!-- wp:cover {"minHeight":480,"minHeightUnit":"px","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>THE LION KING</em></strong> <strong><em>2019</em></strong></p>
+<!-- /wp:paragraph -->
 
-// Setup JW Player if the URL and keys are present
-if (url && k1 && k2) {
-    jwplayer("player").setup({
-        playlist: [{
-            sources: [{
-                file: url,
-                drm: {
-                    clearkey: {
-                        keyId: k1,
-                        key: k2
-                    }
-                }
-            }]
-        }],
-        autostart: true,
-        width: "100%", 
-        height: "100%", 
-        stretching: "exactfit",
-        aspectratio: "16:9",
-        cast: {} // Enabling Chromecast support
-    });
-} else {
-    console.error("Failed to extract DRM keys or URL from the input.");
-}
-</script>
+<!-- wp:image {"lightbox":{"enabled":false},"id":13,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!ArKbeLS6-ChHb7zvhxzdn7AeHhw"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016966.jpg?w=739" alt="" class="wp-image-13" /></a><figcaption class="wp-element-caption"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color"><strong>[</strong></mark><span><mark style="background-color: rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color"><b>HINDI]</b></mark></span></figcaption></figure>
+<!-- /wp:image -->
 
-</body>
-</html>
+<!-- wp:image {"lightbox":{"enabled":false},"id":17,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!Anhbh4szyDYggVmX8eKIpFc_Bpgu"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016966-1.jpg?w=739" alt="" class="wp-image-17" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":480,"minHeightUnit":"px","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>PUSS IN BOOTS</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":21,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!Anhbh4szyDYggVz2OaYyVerRZ-VU"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016968-1.jpg?w=739" alt="" class="wp-image-21" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[HINDI]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":20,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!Anhbh4szyDYggV_6qzN3bFRyZaZw"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016968.jpg?w=739" alt="" class="wp-image-20" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":480,"minHeightUnit":"px","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>PUSS IN BOOTS</em></strong> <strong><em>THE LAST WISH </em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":29,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/c/00f0c348fb662cd0/EdAsZvtIw_AggABtAAAAAAABVCeF6z2j2bsGaeEGJsNxyw"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016967-2.jpg?w=739" alt="" class="wp-image-29" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[HINDI]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":30,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/c/00f0c348fb662cd0/EdAsZvtIw_AggABuAAAAAAABBeOvI2MWb_Ojla6Q94AlpA"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016967-3.jpg?w=739" alt="" class="wp-image-30" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":100,"minHeightUnit":"vh","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>ANIME</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":317,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://animetv7436iutryuf.wordpress.com/ "><img src="https://tvworlddotblog.files.wordpress.com/2024/04/1000016873-1.jpg?w=452" alt="" class="wp-image-317" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong>[HINDI]</strong> <strong>[ENGLISH]</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(SHOW THE ANIME)</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong>(<em>CLICK THE PHOTO</em>)</strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":100,"minHeightUnit":"vh","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>ANIME</em></strong> <strong><em>MOVIE </em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":2059,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://animemovie454urhtfuf.wordpress.com/ "><img src="https://frsuperflash3388.files.wordpress.com/2024/05/1000005445.jpg?w=736" alt="" class="wp-image-2059" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong>[HINDI]</strong> <strong>[ENGLISH]</strong> <strong>[JAPANESE]</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(SHOW THE ANIME)</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong>(<em>CLICK THE PHOTO</em>)</strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":100,"minHeightUnit":"vh","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>TOM AND JERRY THE ALL MOVIE'S</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":350,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://tomandjerry75675334iyghyfvjt.wordpress.com/ "><img src="https://tvworlddotblog.files.wordpress.com/2024/04/1000016905.jpg?w=452" alt="" class="wp-image-350" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong>[HINDI]</strong> <strong>[ENGLISH]</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong>(<em>CLICK THE PHOTO</em>)</strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":100,"minHeightUnit":"vh","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>THE ANGRY BIRDS MOVIE </em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":34,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!Ag8xX-PKKUr2cU1ZP40cHaQjoZA"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016971.png?w=600" alt="" class="wp-image-34" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[HINDI]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":35,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!Ag8xX-PKKUr2cuZ7HLiROj002XQ"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016971-1.png?w=600" alt="" class="wp-image-35" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":100,"minHeightUnit":"vh","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>THE ANGRY BIRDS MOVIE 2</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":39,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!Ag8xX-PKKUr2eJ37FDOy8Mnaa9w"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016972.jpg?w=739" alt="" class="wp-image-39" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[HINDI]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":40,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!Ag8xX-PKKUr2ecrH5hYBYPNjCoA"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016972-1.jpg?w=739" alt="" class="wp-image-40" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":480,"minHeightUnit":"px","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>CARS</em></strong> <strong><em>MOVIE </em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":44,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!AiQ-Ljb79RYqcvXKpO1yRwH8OuY"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016975.jpg?w=731" alt="" class="wp-image-44" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[HINDI]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":45,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!AiQ-Ljb79RYqdChgfq8YXYbB3Ik"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016975-1.jpg?w=731" alt="" class="wp-image-45" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"minHeight":480,"minHeightUnit":"px","customGradient":"linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgb(143,2,143) 0%,rgb(64,7,110) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write titleu2026"} -->
+<p class="has-text-align-center"><strong><em>CARS</em></strong> <strong><em>2</em></strong> <strong><em>MOVIE </em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":50,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!AiQ-Ljb79RYqeTAGKsNbF3t6G68"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016976.jpg?w=678" alt="" class="wp-image-50" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[HINDI]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":51,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://1drv.ms/v/s!AiQ-Ljb79RYqex9WBcnfKNGhAKI"><img src="https://frsuperflash3388.files.wordpress.com/2024/04/1000016976-1.jpg?w=678" alt="" class="wp-image-51" /></a><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-tertiary-color">[ENGLISH]</mark></strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><em>(CLICK THE PHOTO SHOW THE MOVIE)</em></strong></p
