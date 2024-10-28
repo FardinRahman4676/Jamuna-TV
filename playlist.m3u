@@ -3,3 +3,5 @@
 http://starshare.live:8080/live/qwer/qwer/421.m3u8
 #EXTINF:-1 tvg-id="1726ae10" tvg-name="LINK 2" tvg-logo="" tvg-chno="1" group-title="FR TV CHANNEL", LINK 2
 https://ythls.armelin.one/channel/UCDj9HHrRUzlsTuPQN0PHxjw.m3u8
+#EXTINF:-1 tvg-id="1726ae10" tvg-name="LINK 3" tvg-logo="" tvg-chno="1" group-title="FR TV CHANNEL", LINK 3
+https://youtube.jitendra-kumar.workers.dev/wanda.m3u8?id=r4x1Z63sjZM
